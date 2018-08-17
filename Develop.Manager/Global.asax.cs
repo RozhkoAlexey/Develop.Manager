@@ -14,6 +14,7 @@
         }
         protected void Application_Start()
         {
+            IoCConfig.ConfigureContainer();
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             Logger.InitLogger();
